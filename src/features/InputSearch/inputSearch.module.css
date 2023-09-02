@@ -1,0 +1,27 @@
+.input_wrapper {
+  position: relative;
+}
+
+.input {
+  box-sizing: border-box;
+  padding-right: 15%;
+}
+
+.input_btn {
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+
+  height: 100%;
+  padding: 10px;
+
+  background: transparent;
+  border: none;
+}
+
+.svg_icon {
+  fill: aqua;
+}
