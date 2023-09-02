@@ -47,7 +47,7 @@ export const Books: FC = () => {
           <Card
             key={`${el.id}${el.etag}`}
             img={el.volumeInfo.imageLinks?.thumbnail ?? ''}
-            author={el.volumeInfo.authors?.[0] ?? ''}
+            author={el.volumeInfo.authors ?? ['']}
             subtitle={el.volumeInfo.title ?? ''}
             title={el.volumeInfo.categories?.[0] ?? ''}
           />

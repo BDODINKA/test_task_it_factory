@@ -11,7 +11,11 @@ export const Card: FC<CardType> = ({ img, title, author, subtitle }) => {
       <div className={style.card_description}>
         <p className={style.card_title}>{title}</p>
         <p className={style.card_subtitle}>{subtitle}</p>
-        <p className={style.card_author}>{author}</p>
+        {author.map(el => (
+          <p key={el} className={style.card_author}>
+            {el}
+          </p>
+        ))}
       </div>
     </div>
   )
