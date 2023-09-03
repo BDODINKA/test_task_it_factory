@@ -3,7 +3,7 @@ import style from './NotFoundBooks.module.css'
 
 export const NotFoundBooks = () => {
   return (
-    <div>
+    <div className={style.wrapper}>
       <h3>Books not Found</h3>
       <SvgBook className={style.img} />
     </div>

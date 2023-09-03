@@ -37,7 +37,7 @@ export const Books: FC = () => {
       </section>
     )
 
-  if (!books) return <NotFoundBooks />
+  if (!books.length) return <NotFoundBooks />
 
   return (
     <section className={style.books_wrapper}>

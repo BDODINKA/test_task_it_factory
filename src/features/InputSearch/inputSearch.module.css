@@ -1,27 +1,29 @@
 .input_wrapper {
-  position: relative;
+    position: relative;
 }
 
 .input {
-  box-sizing: border-box;
-  padding-right: 15%;
+    box-sizing: border-box;
+    padding-right: 15%;
 }
 
 .input_btn {
-  cursor: pointer;
+    cursor: pointer;
 
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
 
-  height: 100%;
-  padding: 10px;
+    height: 100%;
+    padding: 10px;
 
-  background: transparent;
-  border: none;
+    background: transparent;
+    border: none;
 }
 
 .svg_icon {
-  fill: aqua;
+    cursor: none;
+
+    fill: aqua;
 }

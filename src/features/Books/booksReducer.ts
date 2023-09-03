@@ -81,9 +81,11 @@ export const getBooksTC = (): AppThunk => async (dispatch, getState) => {
   try {
     const res = await booksAPI.getBooks(params)
 
-    dispatch(setBooksAC(res.data))
-
-    dispatch(setAppStatusAC('success'))
+    if (res.data.items) {
+      dispatch(setBooksAC(res.data))
+      dispatch(setAppStatusAC('success'))
+    }
+    dispatch(setAppStatusAC('error'))
   } catch (e) {
     if (e instanceof Error) {
       dispatch(setAppStatusAC('error'))
